@@ -1,0 +1,305 @@
+:root {
+    --main-color: #303030;
+    --secondary-color: #9DA4BD;
+    --hover-color: #FF6C00;
+    --header-color: #ffffff;
+}
+
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+}
+
+header {
+    background-color: #9e9b9b;
+}
+.nav-menu .link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-color);
+}
+
+.nav-menu .link:hover,
+.nav-menu .link:focus {
+    color: var(--hover-color);
+}
+
+.telephone {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: var(--header-color);
+}
+
+.header-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #FF6C00;
+    cursor: pointer;
+}
+
+.header-btn:hover,
+.header.btn:focus {
+    color: var(--header-color);
+    background-color: var(--hover-color);
+}
+.hero {
+background-color: #3b57bb;
+
+}
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em
+}
+
+.after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+.hero-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.main-title {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    color: var(--header-color);
+}
+.hero-after-title {
+color: #9DA4BD;   
+}
+.hero-social-media .link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: var(--main-color)
+    
+}
+.hero-social-media .link:hover {
+    color: var(--hover-color);
+}
+
+.hero-navigation {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: var(--header-color)
+}
+.hero-navigation .back {
+    color: rgba(157, 164, 189, 0.6);
+}
+.about-pre-title {
+    text-transform: uppercase;
+    color: var(--main-color)
+}
+
+.about-title {
+    color: var(--main-color)
+}
+.about-after-title {
+    color: #555555;
+}
+
+.about-btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #303030;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    background: var(--header-color);
+}
+
+.about-btn:hover,
+.about-btn:focus  {
+color: var(--header-color);
+background-color: var(--hover-color);
+}
+.price-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+.price-title {
+    color: #FFFFFF;
+    background-color: #555555;
+}
+
+.price-list {
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+.number-customer {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+.symbol-customer {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FF6C00;
+}
+.customer-advantages {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #303030;
+}
+.customer-advantages-pre-title {
+        color: #303030;
+}
+.whywe-title {
+        color: #303030;
+}
+.customer-advantages-after-title {
+    color: #555555;
+}
+.whoweare {
+    color: #303030;
+}
+
+.whoweare-title {
+    color: #303030;
+}
+.barbers {
+    background-color: #161010;
+}
+
+.barbers-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px
+
+}
+.barber-after-title {
+    color: #FF6C00;
+}
+.history-descr {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.barbers-social .barbers-social-media:hover {
+    color: var(--hover-color);
+}
+
+.whoweare-social {
+    color: none;
+}
+
+.whoweare-social:hover {
+    color: var(--hover-color);
+}
+.visually-hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+}
+.contacts {
+    background-color: #161010;
+}
+
+.contacts-title {
+    color: #FFFFFF
+}
+
+.contacts-list {}
+
+.contacts-address a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+    font-style: normal;
+}
+
+.contacts-telephone a,
+.contacts-email a {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.contacts-email a {
+    text-decoration: underline;
+}
+.contacts-pre-title {
+color: #FFFFFF;
+}
+
+.contacts-after-title {
+ color: #9DA4BD;
+}
+
+.footer {
+    background-color: #F7F7F7;
+}
+
+.copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: #9DA4BD;
+}
+
+.footer-list a {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+.footer-list a:hover,
+.footer-list a:focus {
+    color: var(--hover-color);
+}
