@@ -110,9 +110,13 @@ background-color: #3b57bb;
 padding: 70px 0 208px;
 
 }
+.hero .container {
+    display: flex;
+}
 
 .hero-cont {
     padding: 184px 526px 208px 100px;
+    flex-grow: 1;
 }
 .pre-title {
     font-weight: 600;
@@ -151,6 +155,10 @@ padding: 70px 0 208px;
     max-width: 360px;
 color: #9DA4BD;   
 }
+.hero-social-media {
+    width: 100px;
+}
+
 .hero-social-media .link {
     font-weight: 600;
     font-size: 11px;
@@ -179,11 +187,14 @@ color: #9DA4BD;
     padding: 120px 0;
 }
 
-
+.about .container {
+    display: flex;
+}
 .about .list {
     display: flex;
 
 }
+
 .about-pre-title {
     margin-bottom: 20px;
 
@@ -191,9 +202,12 @@ color: #9DA4BD;
     color: var(--main-color)
 }
 
-
-.list li {
+.about-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.about-content {
+    margin-left: 30px;
 }
 .about-title {
     margin-bottom: 20px;
@@ -234,6 +248,7 @@ color: #9DA4BD;
     padding: 120px 0;
 }
 
+
 .price-pre-title {
     margin-bottom: 20px;
     color: rgba(157, 164, 189, 0.6);
@@ -243,20 +258,30 @@ color: #9DA4BD;
     color: #FFFFFF;
     background-color: #555555;
 }
-
+.price-list-wrap {
+    display: flex;
+    gap: 30px;
+    
+}
 .price-list {
     border: 1px solid;
     padding: 30px 20px;
-
-
+    flex-grow: 1;
+   min-width: 540px; 
+    
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.02em;
     color: #9DA4BD;
 }
+.prices-items:last-child {
+    margin-bottom: 0px;
+}
 
 .prices-items {
+    display: flex;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .price .header-btn {
@@ -268,22 +293,38 @@ color: #9DA4BD;
 .benefits {
     padding: 120px 0px;
 }
+.benefits .container {
+    display: flex;
+}
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+}
+.advantages-wrap {
+    margin-left: 130px;
+}
+.benefits-item:nth-child(2n + 1) {
+    margin-right: 30px;
+}
+.benefits-item:nth-child(2n) {
+    margin-top: 30px;
+}
 .benefits-item {
-    width: 170px;
-    height: 133px;
+    width: 122px;
+    height: 96px;
     background-color: #F7F7F7 ;
     padding: 20px 24px;
     text-align: center;
 }
 .number-customer {
-    display: inline-block;
-
     font-weight: 700;
     font-size: 42px;
-    line-height: 57px;
+    line-height: 1.35;
     text-align: center;
     letter-spacing: 0.05em;
     color: #303030;
+    display: inline-block;
 }
 .symbol-customer {
     font-weight: 600;
@@ -306,12 +347,14 @@ color: #9DA4BD;
 
 .customer-advantages-title {
     margin-bottom: 20px;
+    max-width: 430px;
 }
 .whywe-title {
         color: #303030;
 }
 .customer-advantages-after-title {
     color: #555555;
+    max-width: 500px;
 }
 .whoweare {
     margin-bottom: 20px;
@@ -327,7 +370,17 @@ color: #9DA4BD;
     padding: 120px 0px;
     
 }
+.barbers-list {
+    display: flex;
+}
 
+.barbers-item {
+    text-align: center;
+    width: calc((100% - 60px) / 3);
+}
+.barbers-item:not(:last-child) {
+    margin-right: 30px;
+}
 .barbers-title {
     margin-top: 30px;
     margin-bottom: 8px;
@@ -367,6 +420,20 @@ color: #9DA4BD;
     padding: 120px 0;
 }
 
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+
+}
+
+.gallery-item {
+    width: calc((100% - 120px) / 4);
+    
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
 .gallery-descr {
     margin-bottom: 44px;
 }
@@ -380,8 +447,14 @@ color: #9DA4BD;
         white-space: nowrap;
         overflow: hidden;
 }
+/* ---------contacts--------- */
 .contacts {
     background-color: #161010;
+    background-image: url(../Images/Bg-contacts.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 785px;
+    height: 634px;
 }
 
 .contacts-title {
@@ -423,7 +496,9 @@ color: #FFFFFF;
     padding: 56px 0;
     background-color: #F7F7F7;
 }
-
+.footer .container {
+    display: flex;
+}
 .copy {
     font-weight: 600;
     font-size: 11px;
@@ -432,7 +507,13 @@ color: #FFFFFF;
     color: #9DA4BD;
 }
 
+.footer-list {
+    display: flex;
+ 
+}
+
 .footer-list a {
+   
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
@@ -442,4 +523,7 @@ color: #FFFFFF;
 .footer-list a:hover,
 .footer-list a:focus {
     color: var(--hover-color);
+}
+.footer-insta {
+    margin-right: 40px;
 }
