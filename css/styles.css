@@ -106,8 +106,6 @@ header .container {
 
 /* -----------------HERO-------------------------- */
 .hero {
-background-color: #3b57bb;
-padding: 70px 0 208px;
 
 }
 .hero .container {
@@ -117,6 +115,9 @@ padding: 70px 0 208px;
 .hero-cont {
     padding: 184px 526px 208px 100px;
     flex-grow: 1;
+    background-image: url(../Images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .pre-title {
     font-weight: 600;
