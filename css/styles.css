@@ -63,6 +63,7 @@ header .container {
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--header-color);
+    transition: color 200ms linear;
 }
 
 .nav-menu .link:hover,
@@ -97,6 +98,7 @@ header .container {
     cursor: pointer;
     border: 1px solid #FF6C00;
     border-radius: 25px;
+    transition: background-color 200ms linear, color 200ms linear;
 }
 
 .header-btn:hover,
@@ -179,7 +181,8 @@ color: #9DA4BD;
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 0.2em;
-    color: var(--main-color)
+    color: var(--main-color);
+    transition: color 200ms linear;
     
 }
 .hero-social-media .link:hover {
@@ -251,6 +254,7 @@ color: #9DA4BD;
     background: var(--header-color);
     height: 40px;
     min-width: 160px;
+    transition: background-color 200ms linear, color 200ms linear;
 }
 
 .about-btn:hover,
@@ -506,62 +510,95 @@ background-color: rgba(157, 164, 189, 0.6);
 
 .form-contact-wrap {
     display: flex;
+    flex-grow: ;
 }
 .form {
     background-color: #191C26;
+    padding-top: 130px;
+    flex-basis: ;
+
 }
 .form-title {
     color: var(--header-color);
+    margin-bottom: 44px;
 }
 
+.input-form {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    min-width: 270px;
+}
+.form-message-wrap {
+    margin-top: 44px;
+}
 
+.textarea-main {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    resize: none;
+    width: 100%;
+}
 
-
-
+.input-form {
+    margin-right: 30px;
+}
+.form-btn {
+    padding: 12px 0;
+    width: 160px;
+    margin-top: 44px;
+}
 /* ---------contacts--------- */
 .contacts {
-    background-color: #161010;
-    background-image: url(../Images/Bg-contacts.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 785px;
-    height: 634px;
+background-image: url(../Images/Bg-prices-png.png);
+background-color: #191C26;
+padding: 130px 0 120px;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .contacts-title {
     color: #FFFFFF
 }
 
-.contacts-list {}
-
-.contacts-address a {
+.contacts-address {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.02em;
     color: #9DA4BD;
-    font-style: normal;
 }
 
-.contacts-telephone a,
-.contacts-email a {
+.contacts-list {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.02em;
     color: #9DA4BD;
+    margin-top: 20px;
 }
-
+.contacts-list:last-child {
+    margin-bottom: 70px;
+}
 .contacts-email a {
     text-decoration: underline;
 }
 
 .contacts-pre-title {
 color: #FFFFFF;
+margin-bottom: 20px;
 }
 
 .contacts-after-title {
  color: #9DA4BD;
 }
+.pre-title::before {
+    background-color: rgba(157, 164, 189, 0.4);;
+}
+
+/* .contacts-form-wrap {
+    display: flex;
+} */
 
 /* ------------footer--------- */
 .footer {
@@ -577,6 +614,8 @@ color: #FFFFFF;
     line-height: 15px;
     letter-spacing: 0.2em;
     color: #9DA4BD;
+
+    margin-right: 773px;
 }
 
 .footer-list {
@@ -599,3 +638,8 @@ color: #FFFFFF;
 .footer-insta {
     margin-right: 40px;
 }
+.footer-wrap {
+    display: flex;
+    align-items: center;
+}
+
