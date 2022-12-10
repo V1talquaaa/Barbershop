@@ -23,25 +23,27 @@
         <nav class="navigation">
         
         <ul class="nav-menu list">
-            <li class="nav-item"><a href="" class="link">About</a></li>
-            <li class="nav-item"><a href="" class="link">Services and prices</a></li>
-            <li class="nav-item"><a href="" class="link">Barbers</a></li>
-            <li class="nav-item"><a href="" class="link">Contacts</a></li>
+            <li class="nav-item"><a href="#about" class="link">About</a></li>
+            <li class="nav-item"><a href="#price" class="link">Services and prices</a></li>
+            <li class="nav-item"><a href="#barbers" class="link">Barbers</a></li>
+            <li class="nav-item"><a href="#contacts" class="link">Contacts</a></li>
         </ul>
         
         </nav>
         <a href="tel:+380441111111" class="telephone link">+38 044 111 11 11</a>
-        <button type="button" class="header-btn">ONLINE-BOOKING</button>
+        <button type="button" class="header-btn" data-modal-open>ONLINE-BOOKING</button>
         </div>
 
     </header>
     <main>
         <section class="hero">
             <div class="container">
+                <div class="hero-soc-wrap">
                 <ul class="hero-social-media list">
                     <li><a href="" rel="noopener noreferrer nofollow" class="link">Instagram</a></li>
                     <li><a href="" rel="noopener noreferrer nofollow" class="link">Youtube</a></li>
                 </ul>
+                </div>
                 <div class="hero-cont">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
             <h1 class="main-title">BarberShop</h1>
@@ -51,7 +53,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
             <ul class="list">
                 <li class="about-item"><img src="./Images/img1.jpg" alt="beard brush" width="270" height="445"></li>
@@ -64,13 +66,13 @@
             <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
             of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
             Therefore, we are always ready to improve everyone who comes to us!</p>
-            <button type="button" class="about-btn">ONLINE-BOOKING</button>
+            <button type="button" class="about-btn " data-modal-open>ONLINE-BOOKING</button>
             </div>
             </div>
         
         </section>
 
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
             <p class="price-pre-title pre-title">Spend your time with the best masters</p>
             <h2 class="price-title title">Services and prices</h2>
@@ -113,7 +115,7 @@
             </ul>
             </div>
             <div class="price-btn">
-            <button type="button" class="header-btn">ONLINE-BOOKING</button>
+            <button type="button" class="header-btn" data-modal-open>ONLINE-BOOKING</button>
             </div>
             </div>
         </section>
@@ -143,7 +145,7 @@
         </div>
      </section>
 
-     <section class="barbers">
+     <section class="barbers" id="barbers">
         <div class="container">
         <p class="barbers-pre-title pre-title">For true enjoyers of the atmosphere</p>
         <h2 class="whoweare-title title">Our barbers</h2>
@@ -273,9 +275,9 @@
      </section>
 <!-- Форма заповнення-->
 <div class="contacts-form-wrap">
+    <div class="container">
     <section class="form">
-    <div class="form-contact-wrap container">
-
+        <div class="container">
         <form>
             <h2 class="form-title title">Online-Booking</h2>
             <label for="name"></label>
@@ -293,25 +295,39 @@
         
      </section>
 
-     <section class="contacts">
+     <section class="contacts" id="contacts">
         <div class="container">
         <h2 class="contacts-title title">Contacts</h2>
         
         <ul class="contacts-list list">
             <li class="contacts-address">
+                <svg class="address-icon" width="24" height="24">
+                    <use href="./Images/icon.svg#icon-map-pin"></use>
+                </svg>
+            <address>
              st. Vasilkovaya, 7A <br>
                 Kiev, 08132
+            </address>
 
             </li>    
-            <li class="contacts-list">+38 044 111 11 11
+            <li class="contacts-item">
+                <svg class="address-icon" width="24" height="24">
+                    <use href="./Images/icon.svg#icon-phone"></use>
+            </svg>
+                +38 044 111 11 11
             </li>
-            <li class="contacts-list">barbershop@email.com</li>
+            <li class="contacts-item">
+                <svg class="address-icon" width="24" height="24">
+                    <use href="./Images/icon.svg#icon-mail"></use>
+                </svg>
+                barbershop@email.com</li>
             </ul>
             <p class="contacts-pre-title pre-title">WORKING HOURS</p>
             <p class="contacts-after-title after-title">Every day from 9:00 to 22:00</p>
-            </div>
+        </div>
      </section>
     </div>
+</div>
     </main>
 
     <footer class="footer">
@@ -323,5 +339,18 @@
     </ul>
     </div>
     </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+
+         <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="close-icon-btn" width="12" height="12">
+                <use href="./Images/icon.svg#icon-cross"></use>
+            </svg>
+         </button>   
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
