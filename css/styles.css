@@ -753,6 +753,9 @@ margin: ;
     min-height: 600px;
     min-width: 500px;
     border-radius: 4px;
+
+    padding: 20px;
+
 }
 .modal-close-btn {
     position: absolute;
@@ -764,6 +767,7 @@ margin: ;
     right: 10px;
     display: flex;
     align-items: center;
+    transition: fill 200ms linear;
 }
 
 .modal-close-btn:hover {
