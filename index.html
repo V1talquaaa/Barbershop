@@ -350,11 +350,52 @@
             </svg>
          </button>
          <form class="form-modal">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <svg class="modal-input-icon">
-                <use href=""></use>
-            </svg>
+            <h2 class="form-modal__title">Book your visit</h2>
+            <label for="name" class="form-modal__label">Name</label>
+            <div class="modal-input-wrap">
+                <input type="text" name="name" id="name" class="form-modal__input">
+                <svg class="modal-input__icon" width="16" height="16">
+                    <use href="./Images/icon.svg#icon-user-tie"></use>
+                </svg>
+            </div>
+
+            <label for="name" class="D">Phone number</label>
+            <div class="modal-input-wrap">
+                <input type="tel" name="tel" id="tel" class="form-modal__input">
+                <svg class="modal-input__icon" width="16" height="16">
+                    <use href="./Images/icon.svg#icon-mobile"></use>
+                </svg>
+            </div>
+
+            <label for="email" class="form-modal__label">E-mail</label>
+            <div class="modal-input-wrap">
+                <input type="email" name="email" id="email" class="form-modal__input">
+                <svg class="modal-input__icon" width="16" height="16">
+                        <use href="./Images/icon.svg#icon-envelop"></use>
+                </svg>
+            </div>
+
+            <label for="datetime" class="form-modal__label"></label>
+            <input type="datetime-local" id="datetime" class="form-modal__input  form-modal__input--geo">
+
+            <div class="form-service-wrap">
+            <div class="form-service">
+            <label for="service">Hair</label>
+            <input type="radio" name="service" value="Hair" id="service">
+            </div>
+            <div class="form-service">
+            <label for="service">Beard</label>
+            <input type="radio" name="service" value="Beard" id="service">
+            </div>
+            <div class="form-service">
+            <label for="service">Combo</label>
+            <input type="radio" name="service" value="Combo" id="service">
+            </div>
+            </div>
+
+            <div class="submit-btn-wrap">
+            <button type="submit" class="form-btn header-btn submit-btn">CONFIRM</button>
+            </div>
 
          </form>
         </div>
