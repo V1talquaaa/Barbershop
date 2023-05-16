@@ -692,10 +692,6 @@ header .container {
   color: #F7F7F7;
 }
 
-.textarea-main:focus:-ms-input-placeholder {
-  color: #F7F7F7;
-}
-
 .textarea-main:focus::placeholder {
   color: #F7F7F7;
 }
@@ -717,19 +713,11 @@ header .container {
   color: #FFFFFF;
 }
 
-.input-form:focus:-ms-input-placeholder {
-  color: #FFFFFF;
-}
-
 .input-form:focus::placeholder {
   color: #FFFFFF;
 }
 
 .input-form::-moz-placeholder {
-  padding-bottom: 8px;
-}
-
-.input-form:-ms-input-placeholder {
   padding-bottom: 8px;
 }
 
