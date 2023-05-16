@@ -1,0 +1,86 @@
+.benefits {
+    padding: 120px 0px;
+}
+
+.benefits .container {
+    display: flex;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+}
+
+.advantages-wrap {
+    margin-left: 130px;
+}
+
+.benefits-item:nth-child(2n + 1) {
+    margin-right: 30px;
+}
+
+.benefits-item:nth-child(2n) {
+    margin-top: 30px;
+}
+
+.benefits-item {
+    position: relative;
+    width: 122px;
+    height: 96px;
+    background-color: #F7F7F7;
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.number-customer {
+    @include font(42, 700, 1.35, 0.05);
+    text-align: center;
+    color: #303030;
+    display: inline-block;
+}
+
+.symbol-customer {
+    position: absolute;
+    @include font(16,600, 1.38, null);
+
+    text-align: center;
+    color: #FF6C00;
+    transform: translateY(35px);
+}
+
+.customer-advantages {
+    text-align: center;
+    @include font(11, 600, 1.36, null);
+
+    color: #303030;
+}
+
+.customer-advantages-pre-title {
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+.customer-advantages-title {
+    margin-bottom: 20px;
+    max-width: 430px;
+}
+
+.whywe-title {
+    color: #303030;
+}
+
+.customer-advantages-after-title {
+    color: #555555;
+    max-width: 500px;
+}
+
+.whoweare {
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+.whoweare-title {
+    margin-bottom: 44px;
+    color: #303030;
+}

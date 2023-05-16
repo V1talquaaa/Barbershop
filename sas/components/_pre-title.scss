@@ -1,0 +1,6 @@
+.pre-title {
+    @include font(11, 600, 1.36, null);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
